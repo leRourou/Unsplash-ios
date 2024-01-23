@@ -47,8 +47,7 @@ let jsonString = """
         "genre": "Action",
         "director": "Christopher Nolan"
     }
-]
-"""
+]"""
 
 if let jsonData = jsonString.data(using: .utf8) {
     do {
@@ -66,3 +65,8 @@ if let jsonData = jsonString.data(using: .utf8) {
     }
 }
 ```
+## Partie 4 - Appel Reseau
+### 🔧 Exercice 3
+- `async/await` : Les mots-clés `async` et `await` servent respectivement: À déclarer une fonction asynchrone et à assigner le résultat d'une fonction asynchrone lorsque celle-ci a été résolue.
+- `Combine` : On utilise `Combine` pour traiter les valeurs au fil du temps en en déclarant des `Publishers` qui exposent des valeurs qui peuvent changer au fil du temps, et des `Subscribers` qui recoivent ces mêmes valeurs.
+- `completionHandler / GCD` : Les `completionHandler` sont des bouts de code qui ont pour but d'effectuer et gèrer la complètion d'une tâche.
